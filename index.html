@@ -628,7 +628,7 @@
             <div class="flex items-center justify-center space-x-6 text-base">
                 <a href="https://github.com" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-github"></i></a>
                 <a href="https://linkedin.com" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:ST1052••••@rosebankinternational.net" class="hover:text-emerald-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="mailto:yamkelovilakazi@gmail.com" class="hover:text-emerald-400 transition-colors" title="Email Yamkelo"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <p id="footerCopyright">© 2026 Yamkelo Vilakazi. ST1052•••• | Rosebank International NOC Systems.</p>
         </div>
@@ -859,6 +859,7 @@
         const canvas = document.getElementById('topologyCanvas');
         const ctx = canvas.getContext('2d');
         let nodes = [];
+        let syntaxParticles = [];
         let mouseNode = { x: null, y: null, isMouse: true, vx: 0, vy: 0 };
         let draggedNode = null;
 
@@ -921,10 +922,64 @@
             }
         }
 
+        class SyntaxParticle {
+            constructor() {
+                this.reset();
+                this.y = Math.random() * canvas.height;
+            }
+
+            reset() {
+                const syntaxes = [
+                    "SYN", "ACK", "SYN-ACK", "10.52.64.19/24", "255.255.255.0",
+                    "OSPF", "BGP", "ICMP Echo", "PORT: 22 (SSH)", "PORT: 443 (HTTPS)",
+                    "packet_id: 0x4F2A", "TTL: 64", "ARP WHO HAS 10.52.0.1",
+                    "ESTABLISHED", "LISTEN", "TIME_WAIT", "01010110", "ROUTE ADD",
+                    "TCP/IP", "DNS query", "DHCP ACK", "Tux Core Active"
+                ];
+                this.text = syntaxes[Math.floor(Math.random() * syntaxes.length)];
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + Math.random() * 50;
+                this.vy = -0.2 - Math.random() * 0.4; // slow upward drift
+                this.alpha = 0;
+                this.maxAlpha = 0.05 + Math.random() * 0.15; // faint visibility
+                this.fadeSpeed = 0.002 + Math.random() * 0.003;
+                this.state = 'fadein';
+                this.font = `${Math.floor(Math.random() * 4) + 9}px "Fira Code", monospace`;
+            }
+
+            update() {
+                this.y += this.vy;
+                if (this.state === 'fadein') {
+                    this.alpha += this.fadeSpeed;
+                    if (this.alpha >= this.maxAlpha) {
+                        this.alpha = this.maxAlpha;
+                        this.state = 'fadeout';
+                    }
+                } else if (this.state === 'fadeout') {
+                    this.alpha -= this.fadeSpeed;
+                    if (this.alpha <= 0) {
+                        this.reset();
+                    }
+                }
+
+                if (this.y < -50 || this.x < -50 || this.x > canvas.width + 50) {
+                    this.reset();
+                }
+            }
+
+            draw() {
+                ctx.fillStyle = `rgba(16, 185, 129, ${this.alpha})`;
+                ctx.font = this.font;
+                ctx.textAlign = 'left';
+                ctx.fillText(this.text, this.x, this.y);
+            }
+        }
+
         function initTopology() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             nodes = [];
+            syntaxParticles = [];
 
             nodes.push(new NetworkNode(canvas.width * 0.22, canvas.height * 0.35, currentIdentity.name, "Host"));
             nodes.push(new NetworkNode(canvas.width * 0.45, canvas.height * 0.22, "D-Link 24-Port switch", "Hardware Lab"));
@@ -932,6 +987,12 @@
             nodes.push(new NetworkNode(canvas.width * 0.32, canvas.height * 0.65, "Arch Linux Core OS", "Linux Engine"));
             nodes.push(new NetworkNode(canvas.width * 0.52, canvas.height * 0.72, "Hyprland & GlazeWM", "UI Optimization"));
             nodes.push(new NetworkNode(canvas.width * 0.78, canvas.height * 0.58, "Java Systems", "Software Dev"));
+
+            // Initialize syntax background particles
+            const particleCount = Math.floor((canvas.width * canvas.height) / 60000) + 10;
+            for (let i = 0; i < Math.min(particleCount, 25); i++) {
+                syntaxParticles.push(new SyntaxParticle());
+            }
 
             document.getElementById('activeNodesCounter').textContent = `${nodes.length} NOC NODE MODULES SECURE`;
         }
@@ -969,6 +1030,12 @@
 
         function drawTopology() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw floating networking syntax
+            for (let syntax of syntaxParticles) {
+                syntax.update();
+                syntax.draw();
+            }
 
             if (draggedNode && mouseNode.x && mouseNode.y) {
                 draggedNode.x = mouseNode.x;
