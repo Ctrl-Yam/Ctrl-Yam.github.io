@@ -1744,6 +1744,7 @@
                 if (serverNoiseContainer) serverNoiseContainer.classList.remove('hidden');
                 if (serverNoiseAudio) {
                     serverNoiseAudio.currentTime = 0;
+                    serverNoiseAudio.load();
                     serverNoiseAudio.play().catch(() => {
                         triggerToast('Server noise ready, but autoplay is blocked. Please interact with the page.', 'volume-xmark');
                     });
