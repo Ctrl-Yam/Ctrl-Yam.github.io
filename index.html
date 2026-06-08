@@ -130,9 +130,6 @@
             </div>
             <div class="flex items-center space-x-4">
                 <span class="text-slate-400">CLASS-REP ACTIVE NODE: <strong class="text-yellow-400 font-bold" id="hudName">YAMKELO VILAKAZI</strong></span>
-                <button id="systemResetBtn" onclick="resetConfig()" class="bg-cyan-950/40 hover:bg-cyan-900 border border-cyan-500/30 px-2.5 py-0.5 rounded text-[10px] text-cyan-300 transition-all">
-                    <i class="fa-solid fa-arrows-rotate mr-1"></i> RESET TO RAW TEMPLATE
-                </button>
             </div>
         </div>
     </div>
@@ -282,7 +279,7 @@
 
                     <form id="configForm" onsubmit="injectIdentity(event)" class="space-y-3 font-mono text-xs">
                         <div>
-                            <label class="block text-slate-500 uppercase font-bold mb-1">Full Name</label>
+                            <label class="block text-slate-500 uppercase font-bold mb-1">Full name</label>
                             <input type="text" id="configName" value="Yamkelo Vilakazi" class="w-full bg-slate-950 border border-slate-800 rounded px-3 py-2 text-slate-200 focus:outline-none focus:border-cyan-500/60" required>
                         </div>
                         <div class="grid grid-cols-2 gap-3">
@@ -1044,26 +1041,6 @@
             triggerToast("NOC Configuration State updated successfully!", "sliders");
 
             localStorage.setItem('portfolio_yamkelo_identity', JSON.stringify(currentIdentity));
-        }
-
-        function resetConfig() {
-            localStorage.removeItem('portfolio_yamkelo_identity');
-            currentIdentity = {
-                name: "Yamkelo Vilakazi",
-                role: "IT Student & Class Representative",
-                studentId: "ST1052••••",
-                ip: "10.52.64.19",
-                bio: "Dedicated IT student with a strong foundation in network infrastructure, system administration, and automation scripting."
-            };
-            
-            document.getElementById('configName').value = currentIdentity.name;
-            document.getElementById('configRole').value = currentIdentity.role;
-            document.getElementById('configStudentId').value = currentIdentity.studentId;
-            document.getElementById('configIp').value = currentIdentity.ip;
-            document.getElementById('configBio').value = currentIdentity.bio;
-
-            const mockEvent = { preventDefault: () => {} };
-            injectIdentity(mockEvent);
         }
 
         function simulateRoutePing(ip) {
