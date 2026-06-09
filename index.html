@@ -479,7 +479,7 @@
     <header class="w-full border-b border-neutral-900 bg-black/80 backdrop-blur-md z-40 sticky top-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-3">
+                <div class="hidden md:flex items-center space-x-3">
                     <div class="h-10 w-10 rounded bg-gradient-to-tr from-emerald-950 to-neutral-900 flex items-center justify-center shadow-lg shadow-emerald-500/10 border border-emerald-400/30">
                         <i class="fa-solid fa-server text-emerald-400 text-lg animate-pulse"></i>
                     </div>
@@ -502,13 +502,13 @@
                 </nav>
 
                 <div class="flex items-center space-x-3">
-                    <button id="themeToggle" class="order-4 md:order-none p-2 rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
+                    <button id="themeToggle" class="hidden md:inline-flex order-4 md:order-none p-2 rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                         <i id="themeIcon" class="fa-solid fa-moon"></i>
                     </button>
-                    <button id="serverNoiseBtn" class="order-3 md:order-none flex items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
+                    <button id="serverNoiseBtn" class="hidden md:flex order-3 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                         <i class="fa-solid fa-volume-high mr-1"></i><span>SERVER NOISE</span>
                     </button>
-                    <div class="relative order-1 md:order-none">
+                    <div class="hidden md:block relative order-1 md:order-none">
                         <button id="themePickerBtn" class="flex items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-all">
                             <span>THEME</span>
                             <i class="fa-solid fa-chevron-down"></i>
@@ -526,7 +526,7 @@
                             <button type="button" data-theme="aurora" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-fuchsia-300 transition">Aurora Spectrum</button>
                         </div>
                     </div>
-                    <button id="sonifierToggleBtn" class="order-2 md:order-none flex items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-emerald-950/20 border border-emerald-500/30 hover:border-emerald-400 hover:bg-emerald-900/20 text-emerald-400 transition-all">
+                    <button id="sonifierToggleBtn" class="hidden md:flex order-2 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-emerald-950/20 border border-emerald-500/30 hover:border-emerald-400 hover:bg-emerald-900/20 text-emerald-400 transition-all">
                         <i id="synthIcon" class="fa-solid fa-volume-xmark mr-1 animate-pulse"></i> SONIFIER [OFF]
                     </button>
                     <button id="mobileMenuBtn" class="order-4 md:order-none md:hidden p-2 rounded text-neutral-400 hover:text-emerald-400 hover:bg-neutral-900 border border-neutral-900">
@@ -545,9 +545,9 @@
         </div>
     </header>
 
-    <div id="serverNoiseContainer" class="hidden fixed bottom-24 right-4 z-40 w-80 rounded-2xl overflow-hidden border border-neutral-900 bg-black/95 p-4 text-xs text-neutral-300 shadow-2xl">
+    <div id="serverNoiseContainer" class="hidden fixed bottom-4 left-4 right-4 md:right-4 md:bottom-24 z-40 max-w-[calc(100%-2rem)] md:w-80 rounded-2xl overflow-hidden border border-neutral-900 bg-black/95 p-4 text-xs text-neutral-300 shadow-2xl">
         <audio id="serverNoiseAudio" preload="auto" loop>
-            <source src="assets/freesound_community-machfan_server-fan-speed-ramp-up-down_ladako_lavalier-20034.mp3" type="audio/mpeg">
+            <source src="freesound_community-machfan_server-fan-speed-ramp-up-down_ladako_lavalier-20034.mp3" type="audio/mpeg">
         </audio>
         <div class="flex items-start justify-between gap-4">
             <div>
