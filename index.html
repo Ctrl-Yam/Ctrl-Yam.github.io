@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yamkelo Vilakazi - Network Operations Center Portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cline x1='16' y1='20' x2='48' y2='20' stroke='%2310b981' stroke-width='2'/%3E%3Cline x1='16' y1='32' x2='48' y2='32' stroke='%2310b981' stroke-width='2'/%3E%3Cline x1='16' y1='44' x2='48' y2='44' stroke='%2310b981' stroke-width='2'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cline x1='16' y1='20' x2='48' y2='20' st[...]
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -495,22 +495,22 @@
                 </div>
 
                 <nav class="hidden md:flex items-center space-x-6 text-xs font-mono uppercase tracking-wider">
-                    <a href="#console-terminal" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-terminal mr-1.5 text-emerald-500/75"></i> SHELL</a>
-                    <a href="#config-panel" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-sliders mr-1.5 text-emerald-500/75"></i> INJECTOR</a>
-                    <a href="#projects-grid" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-diagram-project mr-1.5 text-emerald-500/75"></i> PROJECTS</a>
-                    <a href="#topo-skills" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-graduation-cap mr-1.5 text-emerald-500/75"></i> SKILLS</a>
-                    <a href="#guestbook-incidents" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-file-invoice mr-1.5 text-emerald-500/75"></i> GUESTBOOK</a>
+                    <a href="#console-terminal" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-terminal mr-1.5 text-emerald-500/75"></i> SHELL CONSOLE</a>
+                    <a href="#config-panel" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-sliders mr-1.5 text-emerald-500/75"></i> IDENTITY INJECTOR</a>
+                    <a href="#projects-grid" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-diagram-project mr-1.5 text-emerald-500/75"></i> NETWORK SWITCHES</a>
+                    <a href="#topo-skills" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-graduation-cap mr-1.5 text-emerald-500/75"></i> ACADEMIC STACK</a>
+                    <a href="#guestbook-incidents" class="text-neutral-400 hover:text-emerald-400 transition-colors flex items-center"><i class="fa-solid fa-file-invoice mr-1.5 text-emerald-500/75"></i> INCIDENT LOG GUESTBOOK</a>
                 </nav>
 
                 <div class="flex items-center space-x-3">
-                    <button id="themeToggle" class="hidden md:inline-flex order-4 md:order-none p-2 rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
+                    <button id="themeToggle" class="hidden md:inline-flex order-4 md:order-none p-2 rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all">
                         <i id="themeIcon" class="fa-solid fa-moon"></i>
                     </button>
-                    <button id="serverNoiseBtn" class="hidden md:flex order-3 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
+                    <button id="serverNoiseBtn" class="hidden md:flex order-3 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all">
                         <i class="fa-solid fa-volume-high mr-1"></i><span>SERVER NOISE</span>
                     </button>
                     <div class="hidden md:block relative order-1 md:order-none">
-                        <button id="themePickerBtn" class="flex items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/30 transition-colors">
+                        <button id="themePickerBtn" class="flex items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-neutral-950 border border-neutral-900 text-neutral-400 hover:text-emerald-400 hover:border-emerald-500/50 transition-all">
                             <span>THEME</span>
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
@@ -521,13 +521,13 @@
                             <button type="button" data-theme="neon" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-fuchsia-400 transition">Neon Noir</button>
                             <button type="button" data-theme="arctic" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-cyan-400 transition">Arctic Pulse</button>
                             <button type="button" data-theme="ember" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-red-400 transition">Ember Grid</button>
-                            <button type="button" data-theme="plasma" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-violet-400 transition">Plasma Haze</button>
+                            <button type="button" data-theme="plasma" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-violet-400 transition">Plasma Hold</button>
                             <button type="button" data-theme="retro" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-lime-400 transition">Retro Terminal</button>
                             <button type="button" data-theme="ocean" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-sky-400 transition">Ocean Circuit</button>
-                            <button type="button" data-theme="aurora" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-fuchsia-300 transition">Aurora Lights</button>
+                            <button type="button" data-theme="aurora" class="w-full rounded px-3 py-2 text-left text-xs text-neutral-300 hover:bg-neutral-900 hover:text-fuchsia-300 transition">Aurora Dream</button>
                         </div>
                     </div>
-                    <button id="sonifierToggleBtn" class="hidden md:flex order-2 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-emerald-950/20 border border-emerald-500/30 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 transition-colors">
+                    <button id="sonifierToggleBtn" class="hidden md:flex order-2 md:order-none items-center space-x-2 px-3 py-1.5 text-xs font-mono rounded bg-emerald-950/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-900/20 transition-all">
                         <i id="synthIcon" class="fa-solid fa-volume-xmark mr-1 animate-pulse"></i> SONIFIER [OFF]
                     </button>
                     <button id="mobileMenuBtn" class="order-4 md:order-none md:hidden p-2 rounded text-neutral-400 hover:text-emerald-400 hover:bg-neutral-900 border border-neutral-900">
@@ -546,9 +546,9 @@
         </div>
     </header>
 
-    <div id="serverNoiseContainer" class="hidden fixed bottom-4 left-4 right-4 md:right-4 md:bottom-24 z-40 max-w-[calc(100%-2rem)] md:w-80 rounded-2xl overflow-hidden border border-neutral-900 bg-black/95 p-4 text-xs text-neutral-300 shadow-2xl">
+    <div id="serverNoiseContainer" class="hidden fixed bottom-4 left-4 right-4 md:right-4 md:bottom-24 z-40 max-w-[calc(100%-2rem)] md:w-80 rounded-2xl overflow-hidden border border-neutral-900 bg-black/95 p-4 shadow-2xl">
         <audio id="serverNoiseAudio" preload="auto" loop>
-            <source src="assets/freesound_community-machfan_server-fan-speed-ramp-up-down_ladako_lavalier-20034.mp3" type="audio/mpeg">
+            <source src="https://raw.githubusercontent.com/Ctrl-Yam/Ctrl-Yam.github.io/main/assets/freesound_community-machfan_server-fan-speed-ramp-up-down_ladako_lavalier-20034.mp3" type="audio/mpeg">
         </audio>
         <div class="flex items-start justify-between gap-4">
             <div>
@@ -559,7 +559,7 @@
         </div>
     </div>
 
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-neutral-950 border-2 border-emerald-500 p-4 rounded shadow-2xl flex items-center gap-3">
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-neutral-950 border-2 border-emerald-500 p-4 rounded shadow-2xl flex gap-3 items-start">
         <div id="toastIconContainer" class="h-8 w-8 rounded bg-emerald-500/10 border border-emerald-400 flex items-center justify-center text-emerald-400">
             <i class="fa-solid fa-shield-halved" id="toastIcon"></i>
         </div>
@@ -569,437 +569,7 @@
         </div>
     </div>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
-        <section id="console-terminal" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div class="lg:col-span-7 space-y-4">
-                <div class="cyber-panel rounded-lg overflow-hidden border border-emerald-500/30 neon-glow-cyan">
-                    <div class="bg-neutral-950 border-b border-emerald-500/20 px-4 py-2.5 flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <span class="h-3 w-3 rounded-full bg-red-500/80 animate-pulse"></span>
-                            <span class="h-3 w-3 rounded-full bg-yellow-500/80"></span>
-                            <span class="h-3 w-3 rounded-full bg-emerald-500/80"></span>
-                            <span class="ml-2 font-mono text-xs text-neutral-400">yamkelo-vilakazi@rosebank-international: ~</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <span class="text-[10px] font-mono text-emerald-400 bg-black px-2 py-0.5 rounded border border-neutral-900">ARCH-SHELL</span>
-                        </div>
-                    </div>
-                    
-                    <div class="p-4 bg-black font-mono text-xs leading-relaxed text-emerald-400 space-y-3 min-h-[380px] max-h-[450px] overflow-y-auto" id="terminalOutput">
-                        <p class="text-neutral-500">// Establishing secure network diagnostics bridge...</p>
-                        <p class="text-emerald-500">===================================================================</p>
-                        <p class="text-emerald-400 font-bold">               YAMKELO VILAKAZI - NETWORK PORTAL                   </p>
-                        <p class="text-emerald-500">===================================================================</p>
-                        <div class="flex flex-col md:flex-row gap-4 items-start py-2">
-                            <pre class="text-emerald-500 leading-tight font-bold text-[10px] md:text-xs">
-    .---.    
-   /     \   
-   \.---./   
-   |o_o  |   
-   |:_/  |   
-  //   \ \  
- (|     | ) 
-/'\_   _/`\ 
-\___)=(___/ 
-                            </pre>
-                            <div class="text-neutral-300 space-y-1">
-                                <p>Operator Node Name: <span class="text-emerald-400 font-bold" id="termNodeId">Yamkelo Vilakazi</span></p>
-                                <p>Student ID / IP: <span class="text-emerald-300 font-bold" id="termId">ST1052••••</span> | <span class="text-emerald-400" id="termIp">10.52.64.19</span></p>
-                                <p>Academic Target: <span class="text-emerald-300 font-bold" id="termSpecialty">Diploma in IT (Network Management)</span></p>
-                                <p>Node Status: <span class="bg-emerald-500/10 text-emerald-300 border border-emerald-400/20 px-1.5 py-0.2 rounded text-[10px]">Class Representative (Active)</span></p>
-                                <p>OS Architecture: <span class="text-emerald-400 font-bold">Arch Linux (Hyprland)</span> 🐧</p>
-                            </div>
-                        </div>
-                        <p class="text-neutral-500 mt-2">Available Shell Commands: <span class="text-emerald-500 font-bold">[help, about, qualifications, projects, neofetch, traceroute, ping, clear]</span></p>
-                        <p class="text-neutral-400 mt-1">Type one of the system commands below to audit Yamkelo's credentials.</p>
-                    </div>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12"></main>
 
-                    <div class="border-t border-emerald-500/20 bg-black p-3 flex items-center">
-                        <span class="text-emerald-400 font-mono text-xs mr-2">yamkelo@noc-node:~$</span>
-                        <input type="text" id="terminalInput" placeholder="Type help and press Enter..." class="flex-1 bg-transparent text-emerald-400 font-mono text-xs focus:outline-none placeholder-neutral-600">
-                        <span class="terminal-cursor" id="termCursor"></span>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="executeQuickCommand('neofetch')" class="px-3 py-1.5 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-[11px] font-mono text-neutral-300 hover:text-emerald-300 transition">
-                        <i class="fa-solid fa-circle-info mr-1.5 text-emerald-400"></i> Run 'neofetch'
-                    </button>
-                    <button onclick="executeQuickCommand('about')" class="px-3 py-1.5 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-[11px] font-mono text-neutral-300 hover:text-emerald-300 transition">
-                        <i class="fa-solid fa-user-tag mr-1.5 text-emerald-400"></i> Run 'about'
-                    </button>
-                    <button onclick="executeQuickCommand('qualifications')" class="px-3 py-1.5 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-[11px] font-mono text-neutral-300 hover:text-emerald-300 transition">
-                        <i class="fa-solid fa-graduation-cap mr-1.5 text-emerald-400"></i> Run 'qualifications'
-                    </button>
-                    <button onclick="executeQuickCommand('projects')" class="px-3 py-1.5 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-[11px] font-mono text-neutral-300 hover:text-emerald-300 transition">
-                        <i class="fa-solid fa-network-wired mr-1.5 text-emerald-400"></i> Run 'projects'
-                    </button>
-                    <button onclick="executeQuickCommand('traceroute')" class="px-3 py-1.5 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-[11px] font-mono text-neutral-300 hover:text-emerald-300 transition">
-                        <i class="fa-solid fa-route mr-1.5 text-emerald-400"></i> Run 'traceroute'
-                    </button>
-                </div>
-            </div>
-
-            <div id="config-panel" class="lg:col-span-5 space-y-4">
-                <div class="cyber-panel rounded-lg p-5 border border-emerald-500/20 space-y-4">
-                    <div class="flex items-center justify-between border-b border-neutral-900 pb-3">
-                        <span class="text-xs font-bold font-mono text-emerald-400 tracking-widest uppercase flex items-center">
-                            <i class="fa-solid fa-sliders text-sm mr-2 text-emerald-500"></i> NOC Identity Injector
-                        </span>
-                        <span class="text-[10px] bg-emerald-950/40 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-mono">NODE DESCRIPTOR</span>
-                    </div>
-
-                    <p class="text-xs text-neutral-400 leading-relaxed font-mono">
-                        Inject customized metadata straight into this live NOC frame! Rewriting these values changes headers, rebuilds canvas routing nodes, and triggers audio pulses dynamically.
-                    </p>
-
-                    <form id="configForm" onsubmit="injectIdentity(event)" class="space-y-3 font-mono text-xs">
-                        <div>
-                            <label class="block text-neutral-500 uppercase font-bold mb-1">Full name</label>
-                            <input type="text" id="configName" value="Yamkelo Vilakazi" class="w-full bg-neutral-950 border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60">
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <div>
-                                <label class="block text-neutral-500 uppercase font-bold mb-1">Student / Node ID</label>
-                                <input type="text" id="configStudentId" value="ST1052••••" class="w-full bg-neutral-950 border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60">
-                            </div>
-                            <div>
-                                <label class="block text-neutral-500 uppercase font-bold mb-1">Assigned Router IP</label>
-                                <input type="text" id="configIp" value="10.52.64.19" class="w-full bg-neutral-950 border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-neutral-500 uppercase font-bold mb-1">Primary Role Title</label>
-                            <input type="text" id="configRole" value="IT Student & Class Representative" class="w-full bg-neutral-950 border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60">
-                        </div>
-                        <div>
-                            <label class="block text-neutral-500 uppercase font-bold mb-1">Profile Summary</label>
-                            <textarea id="configBio" rows="2" class="w-full bg-neutral-950 border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60 resize-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-2.5 rounded bg-gradient-to-r from-emerald-800 to-neutral-900 hover:from-emerald-700 hover:to-neutral-850 text-white font-bold tracking-wider uppercase transition">
-                            <i class="fa-solid fa-server mr-1.5 animate-pulse"></i> Inject Configurations
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section id="audio-synthesizer" class="cyber-panel rounded-lg p-6 border border-emerald-500/20 relative overflow-hidden">
-            <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff01_1px,transparent_1px),linear-gradient(to_bottom,#ffffff01_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-            
-            <div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                <div class="md:col-span-4 space-y-3">
-                    <span class="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-400/20">
-                        <i class="fa-solid fa-headphones mr-1"></i> Web Audio Node Router
-                    </span>
-                    <h3 class="text-lg font-bold font-mono tracking-tight text-white flex items-center">
-                        Packet Sonifier Switchboard
-                    </h3>
-                    <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                        Converts active packet diagnostics, route pings, and desktop configuration sweeps into procedural synthesized audio waves in real time.
-                    </p>
-                </div>
-
-                <div class="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <div class="flex justify-between items-center text-[10px] font-mono mb-1">
-                            <span class="text-neutral-400 uppercase">OSCILLATOR FORM</span>
-                            <span id="synthWaveType" class="text-emerald-400 font-bold">sine</span>
-                        </div>
-                        <select id="synthWaveformSelect" onchange="updateSynthWaveform(this.value)" class="w-full bg-neutral-950 border border-neutral-900 rounded px-2.5 py-1.5 text-xs text-neutral-300 focus:outline-none focus:border-emerald-500/60">
-                            <option value="sine">Sine (Atmospheric & Pure)</option>
-                            <option value="triangle">Triangle (Warm Router Ambient)</option>
-                            <option value="sawtooth">Sawtooth (Raw Data Stream)</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <div class="flex justify-between items-center text-[10px] font-mono mb-1">
-                            <span class="text-neutral-400 uppercase">SUBNET BASE FREQ</span>
-                            <span id="synthPitchVal" class="text-emerald-400 font-bold">330Hz</span>
-                        </div>
-                        <input type="range" id="synthPitchSlider" min="150" max="800" value="330" oninput="updateSynthPitch(this.value)" class="w-full h-1 bg-neutral-800 rounded-lg appearance-none cursor-pointer">
-                    </div>
-                </div>
-
-                <div class="md:col-span-3 flex flex-wrap gap-2 justify-end">
-                    <button onclick="triggerSonifierSfx('ping')" class="px-3 py-2 rounded bg-neutral-950 border border-emerald-500/20 hover:border-emerald-400 text-xs font-mono text-emerald-300 hover:text-emerald-200 transition">
-                        🔊 Sound Ping (ICMP)
-                    </button>
-                    <button onclick="triggerSonifierSfx('alert')" class="px-3 py-2 rounded bg-neutral-950 border border-rose-500/20 hover:border-rose-500 text-xs font-mono text-rose-400 hover:text-rose-300 transition">
-                        ⚠️ Sweep Scan
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects-grid" class="space-y-6">
-            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-neutral-900 pb-4">
-                <div>
-                    <h2 class="text-xl font-bold tracking-tight text-white font-mono flex items-center">
-                        <i class="fa-solid fa-network-wired text-emerald-500 mr-2.5 text-lg"></i> System Routing Switchboard
-                    </h2>
-                    <p class="text-xs text-neutral-500 font-mono mt-0.5">Explore active portfolio projects designed as isolated node subnets.</p>
-                </div>
-                <div class="flex items-center space-x-2 font-mono text-[10px]">
-                    <button onclick="filterProjects('all')" class="project-filter-btn px-3 py-1.5 rounded bg-emerald-950/20 text-emerald-400 border border-emerald-500/30">Subnet: All</button>
-                    <button onclick="filterProjects('hardware')" class="project-filter-btn px-3 py-1.5 rounded bg-neutral-950 text-neutral-400 border border-neutral-900 hover:border-emerald-500/30">Subnet: Hardware</button>
-                    <button onclick="filterProjects('automation')" class="project-filter-btn px-3 py-1.5 rounded bg-neutral-950 text-neutral-400 border border-neutral-900 hover:border-emerald-500/30">Subnet: Automation</button>
-                    <button onclick="filterProjects('os')" class="project-filter-btn px-3 py-1.5 rounded bg-neutral-950 text-neutral-400 border border-neutral-900 hover:border-emerald-500/30">Subnet: OS</button>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" id="projectsContainer">
-                
-                <div class="cyber-panel rounded-lg overflow-hidden border border-emerald-500/10 flex flex-col hover:scale-[1.01] hover:border-emerald-400/40 transition-all duration-300" data-subnet="hardware">
-                    <div class="bg-neutral-950 p-3 border-b border-neutral-900 flex items-center justify-between font-mono text-[10px]">
-                        <span class="flex items-center text-neutral-400"><i class="fa-solid fa-ethernet mr-1.5 text-emerald-500"></i> ROUTE: 10.52.10.1</span>
-                        <span class="text-emerald-400 flex items-center"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block animate-pulse mr-1.5"></span> SWITCHPORT 24/UP</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <div class="space-y-2">
-                            <h3 class="text-base font-bold font-mono text-white flex items-center justify-between">
-                                Physical Networking Laboratory
-                                <span class="text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-2 py-0.5 rounded">Core</span>
-                            </h3>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                <strong>Objective:</strong> Designed and simulated enterprise-grade multi-departmental network segmentation and packet switching.
-                            </p>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                Utilizing 24-port D-Link physical switching hardware, I established a functional, isolated lab environment for deploying layered security protocol models, port definitions, and VTP implementations.
-                            </p>
-                        </div>
-                        <div class="pt-4 space-y-3.5">
-                            <div class="flex flex-wrap gap-1.5 font-mono text-[9px]">
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">D-Link Hardware</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">VLAN Isolation</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Hardware Layer 2/3</span>
-                            </div>
-                            <div class="flex justify-between items-center text-[11px] font-mono border-t border-neutral-900 pt-3">
-                                <span class="text-neutral-500"><i class="fa-solid fa-circle text-emerald-500 animate-ping mr-1 text-[8px]"></i> STATUS: RUNNING</span>
-                                <button onclick="simulateRoutePing('10.52.10.1')" class="text-emerald-400 hover:underline">RUN LOCAL DIAGNOSTIC PING</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cyber-panel rounded-lg overflow-hidden border border-emerald-500/10 flex flex-col hover:scale-[1.01] hover:border-emerald-400/40 transition-all duration-300" data-subnet="automation">
-                    <div class="bg-neutral-950 p-3 border-b border-neutral-900 flex items-center justify-between font-mono text-[10px]">
-                        <span class="flex items-center text-neutral-400"><i class="fa-solid fa-gears mr-1.5 text-emerald-500"></i> ROUTE: 10.52.20.1</span>
-                        <span class="text-emerald-400 flex items-center"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block animate-pulse mr-1.5"></span> PORT 8080/UP</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <div class="space-y-2">
-                            <h3 class="text-base font-bold font-mono text-white flex items-center justify-between">
-                                System Automation Suite
-                                <span class="text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-2 py-0.5 rounded">Scripting</span>
-                            </h3>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                <strong>Objective:</strong> Rebuild automated workflows to streamline heavy administration and eliminate repetitive manual systems maintenance.
-                            </p>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                Built custom library frameworks using Windows Batch and Unix-compliant Bash to construct robust automated directory sharding models, instant backups, and continuous backup rotations.
-                            </p>
-                        </div>
-                        <div class="pt-4 space-y-3.5">
-                            <div class="flex flex-wrap gap-1.5 font-mono text-[9px]">
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Bash Shell</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Windows Batch</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Cron & Task Scheduler</span>
-                            </div>
-                            <div class="flex justify-between items-center text-[11px] font-mono border-t border-neutral-900 pt-3">
-                                <span class="text-neutral-500"><i class="fa-solid fa-circle text-emerald-500 animate-ping mr-1 text-[8px]"></i> STATUS: DEPLOYED</span>
-                                <button onclick="simulateRoutePing('10.52.20.1')" class="text-emerald-400 hover:underline">RUN LOCAL DIAGNOSTIC PING</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cyber-panel rounded-lg overflow-hidden border border-emerald-500/10 flex flex-col hover:scale-[1.01] hover:border-emerald-400/40 transition-all duration-300" data-subnet="os">
-                    <div class="bg-neutral-950 p-3 border-b border-neutral-900 flex items-center justify-between font-mono text-[10px]">
-                        <span class="flex items-center text-neutral-400"><i class="fa-solid fa-terminal mr-1.5 text-emerald-500"></i> ROUTE: 10.52.30.1</span>
-                        <span class="text-emerald-400 flex items-center"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block animate-pulse mr-1.5"></span> WM INTERRUPT/OK</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <div class="space-y-2">
-                            <h3 class="text-base font-bold font-mono text-white flex items-center justify-between">
-                                Linux Customization & Optimization
-                                <span class="text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-2 py-0.5 rounded">Tuning</span>
-                            </h3>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                <strong>Objective:</strong> Perform deep kernel resource optimizations on limited physical machinery.
-                            </p>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                Built optimized modular desktop architecture using Arch Linux, Hyprland Wayland Compositor, and GlazeWM. Fully adapted configuration dotfiles to maximize system performance.
-                            </p>
-                        </div>
-                        <div class="pt-4 space-y-3.5">
-                            <div class="flex flex-wrap gap-1.5 font-mono text-[9px]">
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Arch Linux</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Hyprland</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">GlazeWM Configs</span>
-                            </div>
-                            <div class="flex justify-between items-center text-[11px] font-mono border-t border-neutral-900 pt-3">
-                                <span class="text-neutral-500"><i class="fa-solid fa-circle text-emerald-500 animate-ping mr-1 text-[8px]"></i> STATUS: STABLE</span>
-                                <button onclick="simulateRoutePing('10.52.30.1')" class="text-emerald-400 hover:underline">RUN LOCAL DIAGNOSTIC PING</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cyber-panel rounded-lg overflow-hidden border border-emerald-500/10 flex flex-col hover:scale-[1.01] hover:border-emerald-400/40 transition-all duration-300" data-subnet="hardware">
-                    <div class="bg-neutral-950 p-3 border-b border-neutral-900 flex items-center justify-between font-mono text-[10px]">
-                        <span class="flex items-center text-neutral-400"><i class="fa-solid fa-book-bookmark mr-1.5 text-emerald-500"></i> ROUTE: 10.52.40.1</span>
-                        <span class="text-emerald-400 flex items-center"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 inline-block animate-pulse mr-1.5"></span> ADVISORY/UP</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
-                        <div class="space-y-2">
-                            <h3 class="text-base font-bold font-mono text-white flex items-center justify-between">
-                                IT Summative Research Labs
-                                <span class="text-xs text-rose-400 bg-rose-950/40 border border-rose-500/20 px-2 py-0.5 rounded">Research</span>
-                            </h3>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                <strong>Objective:</strong> Bridge the operational gap between academic theories and industry infrastructure realities.
-                            </p>
-                            <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                                Authored and compiled extensive diagnostic papers covering comprehensive Computer Architecture analysis, Digital Transformation strategies, and strict Operating System Security Hardening methodologies.
-                            </p>
-                        </div>
-                        <div class="pt-4 space-y-3.5">
-                            <div class="flex flex-wrap gap-1.5 font-mono text-[9px]">
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Digital Strategy</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-emerald-400">Arch-Anatomy</span>
-                                <span class="bg-black border border-neutral-900 px-2 py-0.5 rounded text-rose-400">OS Security Hardening</span>
-                            </div>
-                            <div class="flex justify-between items-center text-[11px] font-mono border-t border-neutral-900 pt-3">
-                                <span class="text-neutral-500"><i class="fa-solid fa-circle text-emerald-500 animate-ping mr-1 text-[8px]"></i> STATUS: COMPLETE</span>
-                                <button onclick="simulateRoutePing('10.52.40.1')" class="text-emerald-400 hover:underline">RUN LOCAL DIAGNOSTIC PING</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="topo-skills" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div class="lg:col-span-5 space-y-4">
-                <div class="cyber-panel rounded-lg p-5 border border-emerald-500/20 space-y-4">
-                    <h3 class="text-base font-bold font-mono text-white flex items-center">
-                        <i class="fa-solid fa-circle-nodes text-emerald-500 mr-2"></i> Topological Skills Mapping
-                    </h3>
-                    <p class="text-xs text-neutral-400 font-mono leading-relaxed">
-                        These parameters represent active metrics calculated by the local topological canvas in response to your cursor.
-                    </p>
-
-                    <div class="space-y-3.5 font-mono text-xs">
-                        <div>
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-neutral-300">Network Engineering & Switching (L2/L3)</span>
-                                <span class="text-emerald-400 font-bold">90%</span>
-                            </div>
-                            <div class="w-full bg-black rounded-full h-1.5 overflow-hidden border border-neutral-900">
-                                <div class="bg-emerald-500 h-1.5 rounded-full animate-pulse" style="width: 90%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-neutral-300">Linux Administration (Arch / Hyprland)</span>
-                                <span class="text-emerald-400 font-bold">88%</span>
-                            </div>
-                            <div class="w-full bg-black rounded-full h-1.5 overflow-hidden border border-neutral-900">
-                                <div class="bg-emerald-500 h-1.5 rounded-full animate-pulse" style="width: 88%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-neutral-300">System Automation Scripting (Bash / Batch)</span>
-                                <span class="text-emerald-400 font-bold">85%</span>
-                            </div>
-                            <div class="w-full bg-black rounded-full h-1.5 overflow-hidden border border-neutral-900">
-                                <div class="bg-emerald-500 h-1.5 rounded-full animate-pulse" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-neutral-300">Software Engineering (Java)</span>
-                                <span class="text-emerald-400 font-bold">75%</span>
-                            </div>
-                            <div class="w-full bg-black rounded-full h-1.5 overflow-hidden border border-neutral-900">
-                                <div class="bg-emerald-500 h-1.5 rounded-full animate-pulse" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:col-span-7 space-y-4">
-                <div class="cyber-panel rounded-lg p-5 border border-emerald-500/20 flex flex-col justify-between h-full">
-                    <div class="space-y-3">
-                        <h3 class="text-base font-bold font-mono text-white flex items-center">
-                            <i class="fa-solid fa-graduation-cap text-emerald-500 mr-2"></i> Academic Credentials Card
-                        </h3>
-                        <p class="text-xs text-neutral-300 font-mono leading-relaxed">
-                            <strong>Institution:</strong> Rosebank International <br>
-                            <strong>Target Award:</strong> Diploma in Information Technology (Network Management)<br>
-                            <strong>Professional Objectives:</strong> Focus on translating networking theory directly to physical infrastructure challenges. Preparing for advanced logistics and management roles.
-                        </p>
-                        <div class="border-t border-neutral-900 pt-3">
-                            <span class="block text-neutral-400 font-mono text-[11px] mb-1 font-bold uppercase text-emerald-400">Visualizer Instruction Matrix:</span>
-                            <ul class="space-y-1 text-xs font-mono text-emerald-400">
-                                <li class="flex items-start"><i class="fa-solid fa-circle-dot mt-1 mr-2 text-[8px]"></i> <span><strong>Click & Drag Nodes:</strong> Reposition router points anywhere on the canvas.</span></li>
-                                <li class="flex items-start"><i class="fa-solid fa-circle-dot mt-1 mr-2 text-[8px]"></i> <span><strong>Acoustic Feedback:</strong> Interacting with routers outputs audio pulses.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="pt-4 border-t border-neutral-900 flex items-center justify-between text-xs font-mono">
-                        <span class="text-neutral-500 uppercase">Interactive Network Status:</span>
-                        <span class="text-emerald-400 font-bold" id="activeNodesCounter">8 MODULE NODES STABLE</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="guestbook-incidents" class="cyber-panel rounded-lg p-6 border border-emerald-500/20 space-y-6">
-            <div class="border-b border-neutral-900 pb-3 flex justify-between items-center flex-wrap gap-4">
-                <div>
-                    <h3 class="text-base font-bold font-mono text-white flex items-center">
-                        <i class="fa-solid fa-file-invoice text-emerald-500 mr-2"></i> Subnet Guestbook & Incident Tickets
-                    </h3>
-                    <p class="text-xs text-neutral-500 font-mono mt-0.5">Report portfolio feedback as secure system logs saved inside browser storage.</p>
-                </div>
-                <button onclick="clearIncidentLogs()" class="text-xs text-rose-400 hover:underline font-mono">Flush Incident Database</button>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <form id="incidentForm" onsubmit="submitIncident(event)" class="lg:col-span-5 space-y-4 font-mono text-xs">
-                    <div>
-                        <label class="block text-neutral-500 uppercase font-bold mb-1">Operator Identifier / Name</label>
-                        <input type="text" id="reporterName" required placeholder="User-404" class="w-full bg-black border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60">
-                    </div>
-                    <div>
-                        <label class="block text-neutral-500 uppercase font-bold mb-1">Incident Description / Feedback</label>
-                        <textarea id="reporterMessage" required rows="3" placeholder="Tested ping loops on the 24-port subnet simulator. Transmission speed is incredible!" class="w-full bg-black border border-neutral-900 rounded px-3 py-2 text-neutral-200 focus:outline-none focus:border-emerald-500/60 resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-2.5 rounded bg-emerald-950/20 border border-emerald-500/30 text-emerald-400 font-bold tracking-wider uppercase hover:bg-emerald-900/20 transition">
-                        <i class="fa-solid fa-paper-plane mr-1.5 animate-pulse"></i> File Incident Report
-                    </button>
-                </form>
-
-                <div class="lg:col-span-7 space-y-3.5">
-                    <span class="text-[10px] font-mono text-neutral-500 uppercase tracking-widest block">Active Subnet Feed:</span>
-                    
-                    <div id="incidentLogsList" class="space-y-3 max-h-64 overflow-y-auto pr-1"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
