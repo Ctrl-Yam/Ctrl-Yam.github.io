@@ -1339,37 +1339,7 @@
         document.getElementById('mobileMenuBtn').addEventListener('click', () => {
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
-
-        window.onload = function() {
-            loadSavedTheme();
-            const stored = localStorage.getItem('portfolio_yamkelo_identity');
-            if (stored) {
-                currentIdentity = JSON.parse(stored);
-                document.getElementById('configName').value = currentIdentity.name;
-                document.getElementById('configRole').value = currentIdentity.role;
-                document.getElementById('configStudentId').value = currentIdentity.studentId;
-                document.getElementById('configIp').value = currentIdentity.ip;
-                document.getElementById('configBio').value = currentIdentity.bio;
-
-                document.getElementById('brandName').textContent = currentIdentity.name.toUpperCase();
-                document.getElementById('hudName').textContent = currentIdentity.name.toUpperCase();
-                document.getElementById('hudIp').textContent = currentIdentity.ip;
-                
-                document.getElementById('termNodeId').textContent = currentIdentity.name;
-                document.getElementById('termId').textContent = currentIdentity.studentId;
-                document.getElementById('termSpecialty').textContent = currentIdentity.role;
-                document.getElementById('termIp').textContent = currentIdentity.ip;
-            }
-
-            initTopology();
-            drawTopology();
-            renderIncidentLogs();
-
-            setInterval(() => {
-                const mockPing = Math.floor(Math.random() * (16 - 8) + 8);
-                document.getElementById('hudLatency').textContent = `${mockPing}ms`;
-            }, 3000);
-        }
     </script>
+    <script src="assets/scripts.js"></script>
 </body>
 </html>
