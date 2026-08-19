@@ -1,31 +1,16 @@
 tailwind.config = {
-    darkMode: 'class',
-    theme: {
-        extend: {
-            colors: {
-                cyber: {
-                    50: '#f0fdf4',
-                    100: '#dcfce7',
-                    200: '#bbf7d0',
-                    300: '#86efac',
-                    400: '#4ade80',
-                    500: '#22c55e',
-                    600: '#16a34a',
-                    700: '#15803d',
-                    800: '#166534',
-                    900: '#14532d',
-                    950: '#052e16',
-                },
-                network: {
-                    glow: '#10b981',
-                    alert: '#f43f5e',
-                    packet: '#10b981'
-                }
-            },
-            fontFamily: {
-                sans: ['Inter', 'sans-serif'],
-                mono: ['Fira Code', 'JetBrains Mono', 'monospace'],
-            }
-        }
-    }
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'dark-bg': '#0b0d10',
+        'dark-card': '#161920',
+        'dark-border': '#1e293b',
+        'accent-purple': '#a855f7',
+        'accent-light': '#c084fc',
+        'accent-dark': '#7e22ce',
+        'accent-muted': '#241442',
+      },
+    },
+  },
 };
