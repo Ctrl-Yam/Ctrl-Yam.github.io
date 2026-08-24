@@ -142,21 +142,15 @@
           <div class="p-6 pb-4 flex items-start justify-between gap-4">
             <div>
               <p class="text-xs text-[#f87171] font-medium uppercase tracking-wider">Networking lab</p>
-              <h3 class="text-white text-lg font-semibold mt-1">Building a redundant campus topology</h3>
+              <h3 class="text-white text-lg font-semibold mt-1">Medium Enterprise Network Architecture | Cisco Packet Tracer</h3>
             </div>
-            <time datetime="2026-08-18" class="text-xs text-slate-500 whitespace-nowrap">18 Aug 2026</time>
+            <time datetime="2026-08-18" class="text-xs text-slate-500 whitespace-nowrap">24 Aug 2026</time>
           </div>
-          <div class="mx-6 border border-[#263244] rounded-md bg-[#0b0d10] p-4 font-mono text-xs text-slate-400 overflow-x-auto" role="img" aria-label="Lab snapshot showing a router, two switches, and segmented VLANs">
-            <div class="text-[#f87171] mb-3">PROJECT_4 / TOPOLOGY_CHECK</div>
-            <pre class="leading-relaxed">[ R1 ]========[ R2 ]
-  |              |
-[ SW1 ]--------[ SW2 ]
-  |  VLAN 10  |  VLAN 20
-  |  USERS     |  SERVERS
-STATUS: HSRP READY  |  SSH ENABLED</pre>
-          </div>
+          <figure class="mx-6 border border-[#263244] rounded-md bg-[#0b0d10] overflow-hidden">
+            <img src="./feed_images/topology.png" alt="Cisco Packet Tracer medium enterprise network topology with an ISP, HQ router, main switch, departmental computers, and a web server" class="block w-full h-auto" />
+          </figure>
           <div class="p-6 pt-4">
-            <p class="text-sm text-slate-400 leading-relaxed">Testing VLAN segmentation and failover behavior before documenting the final Packet Tracer build.</p>
+            <p class="text-sm text-slate-400 leading-relaxed">Designed and deployed a complete multi-department branch network topology featuring 802.1Q Router-on-a-Stick inter-VLAN routing, dynamic DHCP addressing, and border security via Extended ACLs. Configured Dynamic NAT Overload (PAT) on the edge router to map internal private subnets (<code class="text-slate-300">192.168.0.0/16</code>) across a simulated ISP WAN connection to public endpoints (<code class="text-slate-300">8.8.8.8</code>).</p>
             <div class="flex flex-wrap gap-2 mt-4">
               <span class="text-xs px-2.5 py-1 rounded bg-[#3d0000] text-[#fca5a5] border border-[#5c0000]">Packet Tracer</span>
               <span class="text-xs px-2.5 py-1 rounded bg-[#3d0000] text-[#fca5a5] border border-[#5c0000]">HSRP</span>
