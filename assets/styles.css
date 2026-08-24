@@ -1,4 +1,3 @@
-/* Force dark background and white text globally */
 :root {
   color-scheme: dark;
 }
@@ -9,7 +8,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
