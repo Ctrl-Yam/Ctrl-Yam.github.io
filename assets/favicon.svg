@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Yamkelo network mark</title>
+  <rect width="64" height="64" rx="12" fill="#0b0d10"/>
+  <path d="M20 18v28M20 32h24M44 18v28" fill="none" stroke="#f87171" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="20" cy="18" r="7" fill="#0b0d10" stroke="#fca5a5" stroke-width="4"/>
+  <circle cx="44" cy="18" r="7" fill="#0b0d10" stroke="#fca5a5" stroke-width="4"/>
+  <circle cx="20" cy="46" r="7" fill="#0b0d10" stroke="#fca5a5" stroke-width="4"/>
+  <circle cx="44" cy="46" r="7" fill="#0b0d10" stroke="#fca5a5" stroke-width="4"/>
+  <circle cx="32" cy="32" r="5" fill="#f87171"/>
+</svg>
