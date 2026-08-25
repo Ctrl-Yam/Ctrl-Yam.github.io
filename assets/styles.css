@@ -8,6 +8,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.credly-badge iframe {
+  filter: invert(0.88) hue-rotate(180deg);
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
