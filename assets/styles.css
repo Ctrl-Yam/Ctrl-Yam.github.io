@@ -8,6 +8,58 @@ html, body {
   scroll-behavior: smooth;
 }
 
+a.inline-flex {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, transform 200ms ease;
+}
+
+a.inline-flex:hover {
+  transform: translateY(-2px);
+}
+
+div[class~="bg-[#161920]"] {
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 220ms ease;
+}
+
+div[class~="bg-[#161920]"]:hover,
+article[class~="bg-[#161920]"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+span[class~="bg-[#3d0000]"],
+a[class~="bg-[#3d0000]"] {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+span[class~="bg-[#3d0000]"]:hover,
+a[class~="bg-[#3d0000]"]:hover {
+  transform: translateY(-1px);
+}
+
+figure img,
+div[aria-label="IP calculator screenshots"] img,
+div[aria-label="AWS Summit photos"] img {
+  transition: transform 350ms ease, filter 350ms ease;
+}
+
+figure:hover img,
+div[aria-label="IP calculator screenshots"] img:hover,
+div[aria-label="AWS Summit photos"] img:hover {
+  transform: scale(1.025);
+  filter: brightness(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
 .credly-badge iframe {
   filter: invert(0.88) hue-rotate(180deg);
 }
