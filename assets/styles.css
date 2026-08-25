@@ -8,6 +8,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a.inline-flex {
   transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, transform 200ms ease;
 }
@@ -62,6 +66,18 @@ div[aria-label="AWS Summit photos"] img:hover {
 
 .credly-badge iframe {
   filter: invert(0.88) hue-rotate(180deg);
+  max-width: 100%;
+}
+
+@media (max-width: 639px) {
+  body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .credly-badge {
+    max-width: 100%;
+  }
 }
 
 ::-webkit-scrollbar {
