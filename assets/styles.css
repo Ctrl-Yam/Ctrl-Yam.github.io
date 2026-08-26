@@ -131,6 +131,11 @@ div[aria-label="AWS Summit photos"] img:hover {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+
+  .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .credly-badge iframe {
