@@ -12,6 +12,75 @@ body {
   overflow-x: hidden;
 }
 
+header,
+main > section,
+footer {
+  animation: fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+main > section:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+main > section:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+main > section:nth-child(4) {
+  animation-delay: 260ms;
+}
+
+main > section:nth-child(5) {
+  animation-delay: 340ms;
+}
+
+main > section:nth-child(6) {
+  animation-delay: 420ms;
+}
+
+footer {
+  animation-delay: 500ms;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 650ms ease, transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.live-status-dot {
+  animation: status-pulse 2s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 0.55;
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.35);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 0 5px rgba(52, 211, 153, 0);
+  }
+}
+
 a.inline-flex {
   transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, transform 200ms ease;
 }
