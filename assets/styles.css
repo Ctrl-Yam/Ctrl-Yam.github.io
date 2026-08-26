@@ -12,29 +12,29 @@ body {
   overflow-x: hidden;
 }
 
-header,
-main > section,
-footer {
+.max-w-3xl > header,
+.max-w-3xl > section,
+.max-w-3xl > footer {
   animation: fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-main > section:nth-child(2) {
+.max-w-3xl > section:nth-child(2) {
   animation-delay: 100ms;
 }
 
-main > section:nth-child(3) {
+.max-w-3xl > section:nth-child(3) {
   animation-delay: 180ms;
 }
 
-main > section:nth-child(4) {
+.max-w-3xl > section:nth-child(4) {
   animation-delay: 260ms;
 }
 
-main > section:nth-child(5) {
+.max-w-3xl > section:nth-child(5) {
   animation-delay: 340ms;
 }
 
-main > section:nth-child(6) {
+.max-w-3xl > section:nth-child(6) {
   animation-delay: 420ms;
 }
 
