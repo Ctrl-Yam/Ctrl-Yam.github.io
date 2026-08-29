@@ -1,4 +1,4 @@
-# 🌐 Network Gateway | Personal Portfolio
+# Network Gateway | Personal Portfolio
 
 `[GATEWAY_STATUS: ONLINE]` • `[INTERFACE: ETH0]` • `[ACCESS: GRANTED]`
 
@@ -6,13 +6,13 @@ Welcome to the repository for my personal portfolio website, engineered with a c
 
 ---
 
-## ⚡ Live Demo
+## live Demo
 
 🔗 **[View Portfolio](https://ctrl-yam.github.io/)**
 
 ---
 
-## 🐍 Python & Network Automation Journey
+## Python & Network Automation Journey
 
 * **Language Transition:** Leveraging foundational knowledge in Java and JavaScript to accelerate learning Python for network engineering.
 * **Automation Focus:** Building scripts to automate network workflows, configuration deployments, and network diagnostic tasks.
@@ -20,7 +20,7 @@ Welcome to the repository for my personal portfolio website, engineered with a c
 
 ---
 
-## 🛠️ Features & Highlights
+## Features & Highlights
 
 * **Gateway-Inspired UI:** Styled with network diagnostic and terminal-inspired visual elements.
 * **Responsive Layout:** Optimized for high-definition desktop views and mobile viewports.
@@ -29,7 +29,7 @@ Welcome to the repository for my personal portfolio website, engineered with a c
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 * **Core & Scripting:** Python, Java, JavaScript, Shell Scripting
 * **Frontend & Web:** HTML5, CSS3, JavaScript
@@ -38,7 +38,7 @@ Welcome to the repository for my personal portfolio website, engineered with a c
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 .
